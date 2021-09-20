@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+:root{
+    --a: #FD7272;
+    --b:#FC427B;
+    --c:#ffcccc;
+    --d:#A3CB38;
+    --e:#f8c291;
+    --f:#b8e994;
+    --g:#0c2461;
+    --h:#F8EFBA;
+    --i:#B33771;
+
+    --j:#b8e994;
+    --k:#f8c291;
+    --l:#ffb8b8;
+    --m:;
+    --n:;
+    --o:;
+    --p:;
+    --colorLogo: rgb(247,191,178);
+
+
+
+    --letra-header:#f5f6fa;
+    --color-electromagnet:#2f3640;
+    --color-electromagnet2:#474e56;
+    --desenfoque-color:rgba(1,1,1,0.5);
+    --color-nav:rgb(1,7,14);   
+    --desenfoque-blur:blur(10px);
+    --size-Titulos:35px;
+    --html-bar:40%;
+    --css-bar:35%;
+    --js-bar:15%;
+}
+/* Navegacion */
+
+.seccion1{
+    position: sticky; /*Esto sirve para agregar un nav fijo cuando llegue a cierta posicion*/
+    top: 0;
+}
+.seccion1-nav{
+    background: var(--g);
+    height: 70px;
+    text-align: right;
+
+    display: flex;
+    align-items: center;
+}
+.nav-img{
+    width: 250px;
+    height: 25px;
+    margin-left: 10px;
+}
+.seccion1-img{
+    display: flex;
+    align-items:center;
+    flex-grow: 1;
+}
+.nav-item{
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--colorLogo);
+    padding: 5px 10px 5px 10px;
+    margin-right: 10px;
+    transition: .2s;
+}
+.nav-item:hover{
+    border-bottom: 4px solid white;
+    border-radius: 3px;
+    background:var(--colorLogo);
+    color: white;
+}
+.iconContainer{
+    visibility: hidden;
+}
+
+
+
+
+
+
+
+/* .showcase-img{
+    background: url("media/fondoProduccion.jpg") no-repeat center center/cover ;
+    height: 300px;
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+.showcase-p{
+    color:  rgb(48,44,77);
+    width: 100%;
+    margin: 0 auto;
+} */
