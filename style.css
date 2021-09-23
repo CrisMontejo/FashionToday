@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Josefin Sans', sans-serif;
 }
+
 :root{
     --a: #FD7272;
     --b:#FC427B;
@@ -82,12 +83,13 @@
     background: var(--desenfoque-color);
     backdrop-filter: var(--blur);
     color: var(--colorLogo);
-    height: 50px;
-    padding: 30px;
-
+    padding: 20px;
+    max-width: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    text-align: center;
 
     border-radius: 10px ;
 }
