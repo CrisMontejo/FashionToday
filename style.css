@@ -20,14 +20,18 @@
     --k:#f8c291;
     --l:#ffb8b8;
 
-    --desenfoque-color:rgba(12,36,97,0.6);
+    --desenfoque-color:rgba(210, 187, 122, 0.6);
     --blur:blur(3px);
+    --desenfoque-white:rgba(255,255,255,0.5);
     --colorLogo: rgb(247,191,178);
 
 }
 /* Navegacion */
 
-
+.nav-container{
+    position: relative;
+    z-index: 10;
+}
 .seccion1-nav{
     position: sticky;
     top: 0;
@@ -73,16 +77,16 @@
 }
 /* Header */
 .header{
-    background: url("media/fondoProduccion.jpg")no-repeat center center/cover ;;
+    background: url("media/fondoProduccion3.jpg")no-repeat center center/cover ;;
     height: 350px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .header-h1{
-    background: var(--desenfoque-color);
+    background: var(--desenfoque-white);
     backdrop-filter: var(--blur);
-    color: var(--colorLogo);
+    color: black;
     padding: 20px;
     max-width: 80%;
     display: flex;
@@ -92,6 +96,8 @@
     text-align: center;
 
     border-radius: 10px ;
+
+    z-index: 0;
 }
 
 
