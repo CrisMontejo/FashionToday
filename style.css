@@ -19,20 +19,10 @@
     --k:#f8c291;
     --l:#ffb8b8;
 
+    --desenfoque-color:rgba(12,36,97,0.6);
+    --blur:blur(3px);
     --colorLogo: rgb(247,191,178);
 
-
-
-    --letra-header:#f5f6fa;
-    --color-electromagnet:#2f3640;
-    --color-electromagnet2:#474e56;
-    --desenfoque-color:rgba(1,1,1,0.5);
-    --color-nav:rgb(1,7,14);   
-    --desenfoque-blur:blur(10px);
-    --size-Titulos:35px;
-    --html-bar:40%;
-    --css-bar:35%;
-    --js-bar:15%;
 }
 /* Navegacion */
 
@@ -41,7 +31,7 @@
     position: sticky;
     top: 0;
     background: var(--g);
-    height: 70px;
+    height: 50px;
     text-align: right;
 
     display: flex;
@@ -80,6 +70,30 @@
 .iconContainer{
     visibility: hidden;
 }
+/* Header */
+.header{
+    background: url("media/fondoProduccion.jpg")no-repeat center center/cover ;;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-h1{
+    background: var(--desenfoque-color);
+    backdrop-filter: var(--blur);
+    color: var(--colorLogo);
+    height: 50px;
+    padding: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px ;
+}
+
+
+
 
 @media (max-width:850px) {
     /* navegacion */
@@ -95,7 +109,7 @@
         margin-left: 10px;
     }
     .nav-item{
-        font-size: 17px;
+        font-size: 20px;
         text-decoration: none;
         color: var(--colorLogo);
         padding: 5px 10px 5px 10px;
