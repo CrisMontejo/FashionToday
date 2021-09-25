@@ -1,29 +1,35 @@
 const datos = [{
     pregunta:"¿Qué es producción masiva de ropa?",
     img: "media/ProduccionMasiva.jpg",
-    imgAlt:"Basurero gigante",
-    Link:"",
+    imgAlt:"Produccino masiva de prendas",
+    Link:"Posters/Produccion.html",
 },{
     pregunta:"¿Qué daños puede causar?",
     img: "media/ProduccionMasiva.jpg",
-    imgAlt:"Fast Fashion",
-    Link:"",
+    imgAlt:"Daños",
+    Link:"Posters/Daños.html",
 },{
     pregunta:"¿Qué es la contaminación?",
     img: "media/QueEsLaContaminacion.jpg",
-    imgAlt:"Basurero gigante",
-    Link:"",
+    imgAlt:"Que es la contaminacion",
+    Link:"Posters/Contaminacion.html",
 },{
     pregunta:"Cómo nos afecta?",
     img: "media/ComoNosAfecta.jpg",
-    imgAlt:"Agua sucia",
-    Link:"",
+    imgAlt:"Como nos afecta",
+    Link:"Posters/Afecta.html",
 },{
     pregunta:"¿Cómo lo podemos evitar?",
     img: "media/TomarIniciativa.jpg",
-    imgAlt:"Replantar arboles",
-    Link:"",
-}]
+    imgAlt:"Contaminacion",
+    Link:"Posters/Evitar.html",
+},{
+    pregunta:"Empresas Ecológicas",
+    img: "media/marcas.jpg",
+    imgAlt:"Empresas ecologicas",
+    Link:"Posters/Empresas.html",
+}
+]
 
 const portadas = document.querySelector(".portadas")
 
@@ -64,9 +70,9 @@ for (dato in datos){
 
 
 
-const navIconContainer = document.querySelector(".iconContainer")
-const aContainer = document.querySelector(".aContainer")
-const navItem = document.querySelector("nav-item")
+let navIconContainer = document.querySelector(".iconContainer")
+let aContainer = document.querySelector(".aContainer")
+let navItem = document.querySelector("nav-item")
 
 navIconContainer.addEventListener("click",()=>{
     aContainer.classList.toggle("show")

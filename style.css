@@ -114,8 +114,7 @@
     text-align: justify;
 }
 /* Seccion del portafolio */
-.contenido2{
-}
+
 .portadas{
     display: flex;
     flex-wrap: wrap;
@@ -151,9 +150,23 @@
     width: 100%;
     margin: 0 auto;
 }
+.imgContainer{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.divImgContainer{
+    margin: 15px 0 15px 0;
+}
+.imgcontainer-h1{
+    text-align: center;
+}
+.imgContainer-img{
+    width: 100%;
+}
 
-
-@media (max-width:850px) {
+@media (max-width:1050px) {
     /* navegacion */
     .seccion1-img{
         display: none;
@@ -195,7 +208,7 @@
         flex-direction: column;
         align-items: center;
         position: absolute;
-        background: var(--g);
+        background: var(--a);
         width: 100%;
         top: 70px;
     }

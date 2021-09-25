@@ -4,18 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fashion Today</title>
+    <title>¿Qué es la Contaminación?</title>
     <!-- Custon Style -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <!-- Icono -->
-    <link rel="icon" href="media/HojaLogo.png">
+    <link rel="icon" href="../media/HojaLogo.png">
     <!-- Josefin Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
     <!-- Font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    
 </head>
 <body>
     <div class="nav-container">
@@ -30,31 +29,30 @@
                 <i class="icono fas fa-list"></i>
             </div>
             <div class="aContainer">
-                <a class="nav-item" href="#">Inicio</a>
-                <a class="nav-item" href="Posters/Daños.html">Daños</a>
-                <a class="nav-item" href="Posters/Contaminacion.html">Contaminación</a> 
-                <a class="nav-item" href="Posters/Afecta.html">Como afecta</a> 
-                <a class="nav-item" href="Posters/Evitar.html">Ayudar</a> 
-                <a class="nav-item" href="Posters/Empresas.html">Empresas</a> 
+                <a class="nav-item" href="../index.html">Inicio</a>
+                <a class="nav-item" href="Daños.html">Daños</a>
+                <a class="nav-item" href="#">Contaminación</a> 
+                <a class="nav-item" href="Afecta.html">Como afecta</a> 
+                <a class="nav-item" href="Evitar.html">Como ayudar</a> 
+                <a class="nav-item" href="Empresas.html">Empresas</a> 
             </div>
         </nav>      
     </div>
-    <header class="header">
-        <h1 class="header-h1">Problemas con la producción masiva de ropa</h1>
-    </header>
-    <div class="contenido">
-        <div class="seccion2">
-            <h1 class="seccion2-h1">¿Qué es la producción Masiva de ropa?</h1>
-            <p class="seccion2-p"> El principal origen de la sobreproducción de prendas proviene de las empresas que producen prendas <b>Fast Fashion</b> o <b>Just For a Moment</b>, estas prendas se originan de las tendencias que marcas de alto nivel muestran, el problema es que las empresas de Fast Fashion reproducen miles de copias y estan no son consumidas, por lo tanto son desechadas y continúan sacando a la venta mas diseños, volviendose un ciclo. </p>
+    <div class="imgContainer">
+        <div class="divImgContainer">
+            <h1 class="imgcontainer-h1">¿Qué es la contaminación?</h1>
+            <img class="imgContainer-img" src="../media/1.jpg" alt="">
         </div>
     </div>
-    <div class="contenido2">
-        <div class="portadas">
-        </div> 
-    </div>
-    <a href="Posters/Contaminacion.html"></a>
 
+    <script>
+        let navIconContainer = document.querySelector(".iconContainer")
+        let aContainer = document.querySelector(".aContainer")
+        let navItem = document.querySelector("nav-item")
 
-    <script src="main.js"></script>
+        navIconContainer.addEventListener("click",()=>{
+        aContainer.classList.toggle("show")
+        })
+    </script>
 </body>
 </html>
