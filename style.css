@@ -15,14 +15,13 @@
     --g:#0c2461;
     --h:#F8EFBA;
     --i:#B33771;
-
     --j:#b8e994;
     --k:#f8c291;
     --l:#ffb8b8;
-
+    --m:#2ed573;
     --desenfoque-color:rgba(210, 187, 122, 0.6);
     --blur:blur(3px);
-    --desenfoque-white:rgba(255,255,255,0.5);
+    --desenfoque-white:rgba(255, 255, 255, 0.801);
     --colorLogo: rgb(247,191,178);
 }
 /* Navegacion */
@@ -34,7 +33,7 @@
     top: 0;
 }
 .seccion1-nav{
-    background: var(--g);
+    background: var(--a);
     height: 50px;
     text-align: right;
 
@@ -86,7 +85,7 @@
     background: var(--desenfoque-white);
     backdrop-filter: var(--blur);
     font-size: 45px;
-    color: black;
+    color: var(--colorLogo);
     padding: 20px;
     width: 80%;
     max-width: 1000px;
@@ -115,7 +114,8 @@
     text-align: justify;
 }
 /* Seccion del portafolio */
-
+.contenido2{
+}
 .portadas{
     display: flex;
     flex-wrap: wrap;
@@ -136,11 +136,11 @@
     width: 350px;
     height: 350px;
     border-radius: 15px;
-    box-shadow: 15px -15px var(--color-electromagnet);
+    box-shadow: 15px -15px var(--j);
     transition: .3s;
 }
 .imagen:hover{
-    box-shadow: 15px -16px var(--color-electromagnet2);
+    box-shadow: 15px -16px var(--d);
     box-shadow: 3px 4px 5px 1px rgba(0, 0, 0, 0.2);
 }
 .pregunta{
@@ -181,7 +181,7 @@
         background:none;
     }
     .seccion1-nav{
-        background: var(--g);
+
         height: 70px;
     
         display: flex;
