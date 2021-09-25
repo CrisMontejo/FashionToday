@@ -24,17 +24,16 @@
     --blur:blur(3px);
     --desenfoque-white:rgba(255,255,255,0.5);
     --colorLogo: rgb(247,191,178);
-
 }
 /* Navegacion */
 
 .nav-container{
     position: relative;
     z-index: 10;
-}
-.seccion1-nav{
     position: sticky;
     top: 0;
+}
+.seccion1-nav{
     background: var(--g);
     height: 50px;
     text-align: right;
@@ -77,7 +76,7 @@
 }
 /* Header */
 .header{
-    background: url("media/FondoProduccion3.jpg")no-repeat center center/cover ;;
+    background: url("media/FondoProduccion4.jpg")no-repeat center center/cover ;;
     height: 350px;
     display: flex;
     align-items: center;
@@ -86,21 +85,72 @@
 .header-h1{
     background: var(--desenfoque-white);
     backdrop-filter: var(--blur);
+    font-size: 45px;
     color: black;
     padding: 20px;
-    max-width: 80%;
+    width: 80%;
+    max-width: 1000px;
     display: flex;
     align-items: center;
     justify-content: center;
-
     text-align: center;
-
     border-radius: 10px ;
-
     z-index: 0;
 }
+/* Seccion 2 */
+.contenido{
+    width: 80%;
+    max-width: 1000px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.seccion2-h1{
+    font-size: 40px;
+    margin: 0 0 20px 0;
+    color: var(--l);
+}
+.seccion2-p{
+    font-size: 20px;
+    text-align: justify;
+}
+/* Seccion del portafolio */
 
+.portadas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.portafolio-container{
+    display: flex;
+    flex-direction: column;
 
+    margin: 20px;
+    text-align: center;
+    border-radius: 15px;
+}
+.imagen{
+    width: 350px;
+    height: 350px;
+    border-radius: 15px;
+    box-shadow: 15px -15px var(--color-electromagnet);
+    transition: .3s;
+}
+.imagen:hover{
+    box-shadow: 15px -16px var(--color-electromagnet2);
+    box-shadow: 3px 4px 5px 1px rgba(0, 0, 0, 0.2);
+}
+.pregunta{
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+    width: 100%;
+    margin: 0 auto;
+}
 
 
 @media (max-width:850px) {
@@ -163,23 +213,19 @@
         visibility: initial;
     }
     
-    
+    .header-h1{
+        font-size: 40px;
+    }
+    .seccion2-h1{
+        font-size: 30px;
+    }
+    .seccion2-p{
+        font-size: 20px;
+    }
+    .imagen{
+        height:280px ;
+        width:280px ;
+    }
 }
 
 
-
-
-
-
-/* .showcase-img{
-    background: url("media/fondoProduccion.jpg") no-repeat center center/cover ;
-    height: 300px;
-    width: 70%;
-    margin: 0 auto;
-    border-radius: 8px;
-}
-.showcase-p{
-    color:  rgb(48,44,77);
-    width: 100%;
-    margin: 0 auto;
-} */
