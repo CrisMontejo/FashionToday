@@ -5,7 +5,7 @@ const datos = [{
     Link:"Posters/Produccion.html",
 },{
     pregunta:"¿Qué daños puede causar?",
-    img: "media/ProduccionMasiva.jpg",
+    img: "media/Daños.jpg",
     imgAlt:"Daños",
     Link:"Posters/Daños.html",
 },{
